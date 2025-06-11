@@ -31,3 +31,18 @@ export default function makeCounter(initialValue = 0) {
   };
 }
 ```
+
+### Example
+
+```javascript
+import makeCounter from "./1.js";
+
+const counter = makeCounter(5);
+console.log(counter()); // 5
+console.log(counter()); // 6
+console.log(counter()); // 7
+
+const anotherCounter = makeCounter();
+console.log(anotherCounter()); // 0
+console.log(anotherCounter()); // 1
+```
